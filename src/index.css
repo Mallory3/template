@@ -1,3 +1,73 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global Variables */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sora:wght@800&display=swap');body {
+  /* Site Branding Colors */
+  --main-color: purple;
+  --light-color: #ffffff;
+  --dark-color: rgb(44, 44, 44);
+  
+  /* Site Branding Fonts */
+  font-family: 'Open Sans', sans-serif;
+  --header-font-family: 'Sora', sans-serif;
+
+  /* NavBar */
+  --nav-bg-color: var(--light-color);
+  --nav-text-color: var(--dark-color);
+  --nav-text-color-active: var(--main-color);
+
+  /* Headers */
+  --header-color: var(--dark-color);
+
+  /* Buttons */
+  --button-color: var(--main-color);
+  --primary-button-text-color: var(--light-color);
+}
+
+/* NavBar.js */
+.navBar {
+  background-color: var(--nav-bg-color);
+  color: var(--nav-text-color);
+}
+.navBar .active {
+  color: var(--nav-text-color-active);
+}
+
+/* Header.js */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--header-color);
+  font-family: var( --header-font-family);
+}
+
+/* Button.js */
+.button.primaryBtn {
+  background-color: var(--button-color);
+  border: 2px solid var(--button-color);
+  color: var(--primary-button-text-color);
+}
+
+.button.primaryBtn:hover {
+  border: 2px solid var(--button-color);
+  color: var(--button-color);
+  background-color: transparent;
+}
+
+.button.secondaryBtn {
+  border: 2px solid var(--button-color);
+  color: var(--button-color);
+}
+
+.button.secondaryBtn:hover {
+  background-color: var(--button-color);
+  border: 2px solid var(--button-color);
+  color: var(--primary-button-text-color);
+}
+
+
