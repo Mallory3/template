@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react"
 import { NavLink } from "react-router-dom";
 import { SocialIcon } from "react-social-icons";
 
 export default function NavBar() {
+
+  //navbar scroll when active state
+  const [navbar, setNavbar] = useState(false)
+
+
+  //navbar scroll changeBackground function
+  const changeBackground = () => {
+    if (window.scrollY >= 0.1) {
+      setNavbar(true)
+    } else {
+      setNavbar(false)
+    }
+  }
+  useEffect(() => {
+    changeBackground()
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground)
+  })
+
   return (
-    <header className="navBar">
+    <header className={`fixed w-full ${navbar ? "navBar navBarScroll shadow-xl" : "navBar"}`}>
       <div className="container mx-auto flex justify-between">
         <nav className="flex">
           <NavLink 

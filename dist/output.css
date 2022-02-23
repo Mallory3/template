@@ -500,16 +500,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-.m-2 {
-  margin: 0.5rem;
+.fixed {
+  position: fixed;
 }
 
 .m-auto {
   margin: auto;
 }
 
+.m-4 {
+  margin: 1rem;
+}
+
 .m-6 {
   margin: 1.5rem;
+}
+
+.m-2 {
+  margin: 0.5rem;
 }
 
 .mx-auto {
@@ -522,12 +530,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
-.mb-20 {
-  margin-bottom: 5rem;
-}
-
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
 }
 
 .mt-4 {
@@ -562,6 +578,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.w-full {
+  width: 100%;
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
@@ -590,12 +614,46 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-items: center;
 }
 
+.gap-8 {
+  gap: 2rem;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-xl {
   border-radius: 0.75rem;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
+.bg-blue-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -619,6 +677,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-position: center;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
+.p-6 {
+  padding: 1.5rem;
+}
+
 .p-5 {
   padding: 1.25rem;
 }
@@ -628,14 +698,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-}
-
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .py-2 {
@@ -646,6 +716,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .pl-8 {
@@ -691,6 +766,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1rem;
 }
 
+.shadow-xl {
+  --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 /* Global Variables */
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Sora:wght@800&display=swap');
@@ -698,13 +779,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 body {
   /* Site Branding Colors */
   --main-color: purple;
-  --light-color: #ffffff;
+  --light-color: #f7f7f7;
   --dark-color: rgb(44, 44, 44);
   /* Site Branding Fonts */
   font-family: 'Open Sans', sans-serif;
   --header-font-family: 'Sora', sans-serif;
   /* NavBar */
-  --nav-bg-color: var(--light-color);
+  --nav-bg-color: purple;
   --nav-text-color: var(--dark-color);
   --nav-text-color-active: var(--main-color);
   /* Headers */
@@ -717,8 +798,11 @@ body {
 /* NavBar.js */
 
 .navBar {
-  background-color: var(--nav-bg-color);
   color: var(--nav-text-color);
+}
+
+.navBarScroll {
+  background-color: var(--light-color);
 }
 
 .navBar .active {
@@ -727,14 +811,13 @@ body {
 
 /* Header.js */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.header {
   color: var(--header-color);
   font-family: var( --header-font-family);
+}
+
+.header.light {
+  color: white;
 }
 
 /* Button.js */
@@ -766,7 +849,6 @@ h6 {
 
 .custom-img {
   background-image: url("https://images.unsplash.com/photo-1454496522488-7a8e488e8606?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1955&q=80");
-  height: 50vh;
 }
 
 /* Grid Image */
@@ -782,6 +864,36 @@ h6 {
 .map {
   height: 40vh;
   width:100%;
+}
+
+/* Contact.js */
+
+.contactButton {
+  border: 3px solid var(--button-color);
+}
+
+.contactIcon {
+  height: 2em;
+  width: 2em;
+  fill: var(--button-color);
+}
+
+/* Collapsable.js */
+
+.collapseIcon {
+  height: 1.5em;
+  width: 1.5em;
+  fill: var(--button-color);
+}
+
+.infoIcon {
+  height: 1.5em;
+  width: 1.5em;
+  fill: rgb(59 130 246);
+}
+
+.last\:border:last-child {
+  border-width: 1px;
 }
 
 @media (min-width: 640px) {
