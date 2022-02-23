@@ -8,6 +8,9 @@ export default   {
   // Documents have the type 'document'. Your schema may describe types beyond documents
   // but let's get back to that later.
   type: "document",
+
+  // Disable the add new and publish button
+  // __experimental_actions: [],
   
   // Now we proceed to list the fields of our document
   fields: [
@@ -31,6 +34,6 @@ export default   {
 
       // The type of this field
       type: "string",
-    }
+    },
   ]
 }

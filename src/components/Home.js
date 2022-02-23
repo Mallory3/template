@@ -16,7 +16,7 @@ export default function Home() {
         <Services />
       
      
-        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 justify-items-center content-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 justify-items-center content-center container mx-auto">
           <div className="flex items-center justify-center m-auto mb-20 mt-20 bg-center bg-cover grid-img">
           </div>
           <div className="flex flex-col justify-center items-center m-auto">
