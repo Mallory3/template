@@ -11,7 +11,11 @@
     "@sanity/base",
     "@sanity/default-layout",
     "@sanity/default-login",
-    "@sanity/desk-tool"
+    "@sanity/desk-tool",
+    "order-documents",
+    "asset-source-unsplash",
+    "icon-picker",
+    "note-field"
   ],
   "env": {
     "development": {
@@ -28,6 +32,10 @@
     {
       "implements": "part:@sanity/base/theme/variables/override-style",
       "path": "variableOverrides.css"
+    },
+    {
+      "implements": "part:@sanity/base/brand-logo",
+      "path": "../src/components/MyLogo.js"
     }
   ]
 }

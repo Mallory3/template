@@ -1,5 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import "swiper/css";
+import "swiper/css/grid";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';

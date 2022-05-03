@@ -1,3 +1,5 @@
+import { CgWebsite } from 'react-icons/cg'
+
 export default   {
   // This is the display name for the type
   title: "Contact",
@@ -8,6 +10,7 @@ export default   {
   // Documents have the type 'document'. Your schema may describe types beyond documents
   // but let's get back to that later.
   type: "document",
+  icon: CgWebsite,
 
   // Disable the add new and publish button
   // __experimental_actions: [],

@@ -6,12 +6,12 @@ import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { MdAlternateEmail } from "react-icons/md";
 import { GoMention } from "react-icons/go";
 import { GoDeviceMobile } from "react-icons/go";
-import Header from "./atomic/Header"
-import Button from "./atomic/Button"
-import Paragraph from "./atomic/Paragraph"
-import ParallaxImg from "./atomic/Parallax"
-import Map from "./atomic/Map"
-import Grid from "./atomic/Grid"
+import Header from "./atoms/Header"
+import Button from "./atoms/Button"
+import Paragraph from "./atoms/Paragraph"
+import ParallaxImg from "./atoms/Parallax"
+import Map from "./atoms/Map"
+import Grid from "./atoms/Grid"
 
 export default function Contact() {
 
@@ -28,7 +28,7 @@ export default function Contact() {
   }, [])
 
   return (
-    <div className="py-6">
+    <div className="py-6 sm:max-w-7xl mx-auto">
       <div className="mb-6 flex flex-col justify-center items-center m-auto">
         <Header text="Contact Us" size="2" />
         <span className="mt-2">
@@ -41,21 +41,21 @@ export default function Contact() {
          <div className="grid mb-6 grid-cols-3 gap-8 justify-items-center content-center">
             <div className="flex flex-col justify-center items-center m-auto">
               <Header text="Email Us" size="4" />
-              <button class="contactButton rounded-full py-3 px-3">
+              <button className="contactButton rounded-full py-3 px-3">
                   <MdAlternateEmail className="contactIcon" />
               </button>
               <p>hi@hotmail.com</p>
             </div>
             <div className="flex flex-col justify-center items-center m-auto">
             <Header text="Call Us" size="4" />
-              <button class="contactButton rounded-full py-3 px-3">
+              <button className="contactButton rounded-full py-3 px-3">
                   <MdOutlinePhoneInTalk className="contactIcon" />
               </button>
               <p>(403) 818-4164</p>
             </div>
             <div className="flex flex-col justify-center items-center m-auto">
               <Header text="Text Us" size="4" />
-              <button class="contactButton rounded-full py-3 px-3">
+              <button className="contactButton rounded-full py-3 px-3">
                   <GoDeviceMobile className="contactIcon" />
               </button>
               <p>(403) 818-4164</p>

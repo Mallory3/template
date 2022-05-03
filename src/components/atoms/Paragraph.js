@@ -1,10 +1,11 @@
 import React from 'react';
+import { Capitalize } from "../helper"
 
 class Paragraph extends React.Component {
   render() {
     return (
-      <p>
-        {this.props.text}
+      <p className="firstLetterTransform">
+        {Capitalize(this.props.text)}
       </p>
     )
   }

@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "./atomic/Header"
+import Header from "./atoms/Header"
 
 export default function Resources() {
   return (

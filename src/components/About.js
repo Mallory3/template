@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react"
 import sanityClient from "../client"
-import Header from "./atomic/Header"
+import Header from "./atoms/Header"
 import Services from "./Services"
+import MyLogo from "./MyLogo"
 
 
 
@@ -26,6 +27,7 @@ export default function About() {
       ))}
       <div className="container mx-auto mt-20">
         <Services />
+        <MyLogo />
       </div>
     </main>
   )

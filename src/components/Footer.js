@@ -1,0 +1,18 @@
+import React from "react"
+import Contact from "./Contact"
+
+
+const Gallery = () => {
+  
+  return (
+    <section className="navFooter w-full h-screen text-white pt-8">
+      <div className="grid grid-cols-1 gap-2 sm:gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <Contact />
+        <Contact />
+        <Contact />
+      </div>
+    </section>
+  )
+};
+
+export default Gallery;

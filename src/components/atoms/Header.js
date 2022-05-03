@@ -26,7 +26,7 @@ class Header extends React.Component {
       
     return (
       <HeaderTag
-        className={`header ${HeaderStyles} ${this.props.color}`}
+        className={`header text-${this.props.color} ${HeaderStyles} ${this.props.color} ${this.props.className}`}
       >
         {this.props.text}
       </HeaderTag>

@@ -1,7 +1,16 @@
-/* @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-  --brand-primary: #81A76D;
-  --brand-secondary: #95BF6F;
-  --font-family-base: 'Fjalla One';
-} */
+  /* Brand Colors */
+  --brand-primary: #FF3C38;
+  --brand-secondary: #062739;
+   --brand-primary--inverted: #ffffff;
+   --brand-secondary--inverted: #ffffff;
+   /* Typography */
+   --font-family-sans-serif: 'Open Sans', sans-serif;
+   --font-size-base: 18px;
+   --text-color: var(--brand-secondary--inverted);
+   /* Main Navigation */
+  --main-navigation-color: var(--brand-secondary);
+  --main-navigation-color--inverted: var(--brand-secondary--inverted);
+}

@@ -12,7 +12,8 @@ export default function NavBar() {
   const changeBackground = () => {
     if (window.scrollY >= 0.1) {
       setNavbar(true)
-    } else {
+    }
+    else {
       setNavbar(false)
     }
   }
@@ -23,29 +24,29 @@ export default function NavBar() {
   })
 
   return (
-    <header className={`fixed w-full ${navbar ? "navBar navBarScroll shadow-xl" : "navBar"}`}>
-      <div className="container mx-auto flex justify-between">
+    <header className={`fixed w-full z-50 ${navbar ? "navBar navFooter" : "navBar"}`}>
+      <div className="mx-auto flex justify-between">
         <nav className="flex">
           <NavLink 
             to="/"
-            className="inline-flex items-center py-6 px-3 mr-4 text-4xl"
+            className="inline-flex items-center py-3 px-3 mr-4 text-4xl logoWrapper"
           >
-            Home
+            <img className="logo" alt="logo" src="./Sitelify.png"></img>
           </NavLink>
           <NavLink 
             to="/about"
-            className="inline-flex items-center py-3 px-3 my-6"
+            className="inline-flex items-center py-3 px-3 my-3"
           >
             About
           </NavLink>
           <NavLink 
             to="/contact"
-            className="inline-flex items-center py-3 px-3 my-6"
+            className="inline-flex items-center py-3 px-3 my-3"
           >
             Contact
           </NavLink>
         </nav>
-        <div className="inline-flex py-3 px-3 my-6">
+        <div className="inline-flex py-3 px-3 my-3">
           <SocialIcon url="https://www.facebook.com/mallory.zlomanchuk" className="mr-4" target="_blank" fgColor="#fff" style={{ height:35, width:35}} />
         </div>
       </div>

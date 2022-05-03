@@ -1,3 +1,5 @@
+import { CgFolderAdd } from 'react-icons/cg'
+
 export default   {
   // This is the display name for the type
   title: "Service",
@@ -8,6 +10,7 @@ export default   {
   // Documents have the type 'document'. Your schema may describe types beyond documents
   // but let's get back to that later.
   type: "document",
+  icon: CgFolderAdd,
   
   // Now we proceed to list the fields of our document
   fields: [
@@ -41,6 +44,19 @@ export default   {
 
       // The type of this field
       type: "string",
-    }
-  ]
+    },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
+  ],
+  orderings: [
+    {
+      title: "Manual order",
+      name: "manualOrder",
+      by: [{ field: "order", direction: "asc" }],
+    },
+  ],
 }
