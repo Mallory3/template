@@ -41,7 +41,7 @@ function GalleryData() {
       return (
         <Swiper
           cssMode={true}
-          slidesPerView={1}
+          slidesPerView={3}
           spaceBetween={40}
           pagination={{
             dynamicBullets: true,

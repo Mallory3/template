@@ -71,8 +71,6 @@ function TeamData() {
         }
       }
 
-      
-
       const [modalIsOpen, setIsOpen] = React.useState(false);
 
       function openModal(event) {

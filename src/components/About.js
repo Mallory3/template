@@ -22,12 +22,7 @@ export default function About() {
     }, [])
   return (
     <main>
-      {headerData && headerData.map((header, index) => (
-          <Header key={index} text={header.text} size={header.size}/ >
-      ))}
-      <div className="container mx-auto mt-20">
-        <Services />
-        <MyLogo />
+      <div className="container mx-auto">
       </div>
     </main>
   )

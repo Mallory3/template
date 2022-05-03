@@ -70,10 +70,7 @@ export default function Contact() {
           <Map mapEmbedded={contact.mapEmbedded} />
          </div>
        </div>
-        
       ))}
     </div>
-    
-
   )
 }

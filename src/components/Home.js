@@ -20,14 +20,7 @@ export default function Home() {
   return (
     // Text will be coming from CMS, Size could be too?
     <div className="">
-        
-        
-        
-        
-        
         <ParallaxImg />
-        
-        
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 justify-items-center content-center container mx-auto sm:max-w-7xl">
           <div className="flex flex-col justify-between m-auto h-4/6">
             <Header text="I am a h3 Header" size="3" />
@@ -45,19 +38,12 @@ export default function Home() {
           <div className="flex items-center justify-center m-auto mb-20 mt-20 bg-center bg-cover grid-img2 rounded h-full">
           </div>
         </div>
-
-   
-
-
-
         <Team />
         <Services />
         <PromoBanner />
         <InfoBanner />
         <Gallery />
         {/* quote carasal */}
-      
-     
         <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 justify-items-center content-center container mx-auto sm:max-w-7xl ">
           <div className="flex items-center justify-center m-auto mb-20 mt-20 bg-center bg-cover grid-img">
           </div>

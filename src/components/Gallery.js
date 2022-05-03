@@ -9,6 +9,7 @@ const Gallery = () => {
       <div className="container m-auto overflow-hidden sm:max-w-7xl">
       <SectionHeader text="Gallery" color="white" />
         <div className="">
+          <GalleryData />
         </div>
       </div>
     </section>
