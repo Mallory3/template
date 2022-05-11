@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react"
 import sanityClient from "../../client"
 import imageUrlBuilder from '@sanity/image-url'
-import Image from "../atoms/Image"
 
 
 function PromoBannerData() {
-
     //set a state and use state and set new state for data
     const [promoBannerData, setPromoBanner] = useState(null);
 

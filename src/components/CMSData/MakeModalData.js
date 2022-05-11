@@ -12,7 +12,6 @@ import { Pagination, Navigation, Keyboard } from "swiper";
 
 function MakeModalData({ team }) {
 
-
   const [showModal, setShowModal] = useState(false);
 
       return (

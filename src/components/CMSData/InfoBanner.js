@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react"
 import sanityClient from "../../client"
 import imageUrlBuilder from '@sanity/image-url'
-import Image from "../atoms/Image"
-
 
 function InfoBanner() {
-
     //set a state and use state and set new state for data
     const [infoBannerData, setInfoBanner] = useState(null);
 
@@ -56,4 +53,3 @@ function InfoBanner() {
 }
 
 export default InfoBanner;
-

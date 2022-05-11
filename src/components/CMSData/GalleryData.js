@@ -1,13 +1,11 @@
 import React, { useState, useEffect, useRef } from "react"
 import sanityClient from "../../client"
 import imageUrlBuilder from '@sanity/image-url'
-import Image from "../atoms/Image"
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Keyboard, Grid} from "swiper";
 
 
 function GalleryData() {
-
     //set a state and use state and set new state for data
     const [galleryData, setGallery] = useState(null);
 

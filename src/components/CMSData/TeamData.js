@@ -74,16 +74,16 @@ function TeamData() {
       const [modalIsOpen, setIsOpen] = React.useState(false);
 
       function openModal(event) {
+        console.log(event)
         // If button data-id = modal data-id setIsOpen to true
         const buttonDataId = event.target.getAttribute('data-id');
         console.log(buttonDataId)
         const modal = document.querySelectorAll(`.modal${buttonDataId}`);
         console.log(modal)
-        // const modalDataId = modal.getAttribute('data-id');
-        // console.log(modalDataId)
+        const modalDataId = document.querySelector(`.modal${buttonDataId}`);
+        console.log(modalDataId)
 
-
-        if ( modal) {
+        if ( modalDataId ) {
           setIsOpen(true);
         }
           
@@ -135,6 +135,7 @@ function TeamData() {
                         </button>
                         <Modal 
                           key={index}
+                          data-id={index}
                           contentLabel="Stylist Gallery"
                           portalClassName={`modal modal${index}`}
                           isOpen={modalIsOpen}
