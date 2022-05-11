@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react"
-import SectionHeader from "../atoms/SectionHeader"
+import SectionHeader from "../organisms/SectionHeader"
 import ServiceData from "../CMSData/ServiceData"
 
 const Services = () => {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from "./Header"
+import Header from "../atoms/Header"
 import { HiScissors } from "react-icons/hi";
 import { HiOutlineMinus } from "react-icons/hi";
 

@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-import Header from "./Header"
-import Button from "./Button"
-
-const parallaxImgPath = '../images/parallax.jpeg'
+import Header from "../atoms/Header"
+import Button from "../atoms/Button"
 
 const ParallaxImg = () => {
 
