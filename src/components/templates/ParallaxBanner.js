@@ -34,7 +34,7 @@ function ParallaxBanner() {
       }
 
       return (
-        <>
+        <section id="parallaxBanner">
           {ParallaxBannerData && ParallaxBannerData.map((ParallaxBanner, index) => (
               <div 
                 alt={ParallaxBanner.alt}
@@ -48,7 +48,7 @@ function ParallaxBanner() {
                 </div>
               </div>
           ))}
-        </>
+        </section>
       )
 }
 

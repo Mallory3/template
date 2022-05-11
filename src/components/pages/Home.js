@@ -6,14 +6,14 @@ import Gallery from "../templates/Gallery"
 import Hero from "../templates/Hero"
 import Info from "../templates/Info"
 import ParallaxBanner from "../templates/ParallaxBanner"
-import PromoBanner from "../templates/promoBanner"
+import PromoBanner from "../templates/PromoBanner"
 import Services from "../templates/Services"
 import Team from "../templates/Team"
 
 
 export default function Home() {
   return (
-    <div>
+    <main>
       <Hero />
       <Info />
       <Team />
@@ -23,6 +23,6 @@ export default function Home() {
       <Gallery />
       <Featured />
       <Footer />
-    </div>
+    </main>
   )
 }

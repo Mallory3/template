@@ -4,7 +4,7 @@ import PromoBannerData from "../CMSData/PromoBannerData"
 const PromoBanner = () => {
   
   return (
-    <section className="container mx-auto sm:max-w-7xl">
+    <section id="promoBanner" className="container mx-auto sm:max-w-7xl">
       <PromoBannerData />
     </section>
   )

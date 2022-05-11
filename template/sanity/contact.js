@@ -38,5 +38,25 @@ export default   {
       // The type of this field
       type: "string",
     },
+    {
+      // The display name for this field
+      title: "phone",
+
+      // The identifier for this field used in the api's
+      name: "phone",
+
+      // The type of this field
+      type: "string",
+    },
+    {
+      // The display name for this field
+      title: "text",
+
+      // The identifier for this field used in the api's
+      name: "text",
+
+      // The type of this field
+      type: "string",
+    },
   ]
 }

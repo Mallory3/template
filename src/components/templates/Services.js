@@ -5,7 +5,7 @@ import ServiceData from "../CMSData/ServiceData"
 const Services = () => {
   
   return (
-    <section className="container mx-auto sm:max-w-7xl">
+    <section id="service" className="container mx-auto sm:max-w-7xl">
       <SectionHeader text="Services & Pricing" />
       <ServiceData />
     </section>
