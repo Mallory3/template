@@ -1,8 +1,8 @@
 import { CgWebsite } from 'react-icons/cg'
 
 export default   {
-  title: "Info Banner",
-  name: "infoBanner",
+  title: "Parallax Banner",
+  name: "parallaxBanner",
   type: "document",
   icon: CgWebsite,
   fields: [

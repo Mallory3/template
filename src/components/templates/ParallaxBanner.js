@@ -2,13 +2,13 @@ import React, { useState, useEffect } from "react"
 import sanityClient from "../../client"
 import imageUrlBuilder from '@sanity/image-url'
 
-function InfoBanner() {
+function ParallaxBanner() {
     //set a state and use state and set new state for data
-    const [infoBannerData, setInfoBanner] = useState(null);
+    const [ParallaxBannerData, setParallaxBanner] = useState(null);
 
       useEffect(() => {
         sanityClient
-          .fetch(`*[_type == "infoBanner"] {
+          .fetch(`*[_type == "parallaxBanner"] {
           ...,
           "image": image.asset->{
             url,
@@ -23,7 +23,7 @@ function InfoBanner() {
             }
           }
           }`)
-          .then((data) => setInfoBanner(data))
+          .then((data) => setParallaxBanner(data))
           .catch(console.error)
       }, [])
 
@@ -35,16 +35,16 @@ function InfoBanner() {
 
       return (
         <>
-          {infoBannerData && infoBannerData.map((infoBanner, index) => (
+          {ParallaxBannerData && ParallaxBannerData.map((ParallaxBanner, index) => (
               <div 
-                alt={infoBanner.alt}
+                alt={ParallaxBanner.alt}
                 className="w-full h-screen sm:h-96 bg-cover bg-top bg-fixed mt-24"
                 key={index}
-                style={{backgroundImage: "url(" + urlFor(infoBanner.image.url).url() + ")"}}
+                style={{backgroundImage: "url(" + urlFor(ParallaxBanner.image.url).url() + ")"}}
               >
                 <div className="flex items-center justify-center m-auto w-full h-full bg-gradient-to-t from-black">
-                  <h3 className="text-white">{infoBanner.header}</h3>
-                  <h3 className="text-white">{infoBanner.subheader}</h3>
+                  <h3 className="text-white">{ParallaxBanner.header}</h3>
+                  <h3 className="text-white">{ParallaxBanner.subheader}</h3>
                 </div>
               </div>
           ))}
@@ -52,4 +52,4 @@ function InfoBanner() {
       )
 }
 
-export default InfoBanner;
+export default ParallaxBanner;
