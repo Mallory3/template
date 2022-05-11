@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import sanityClient from "../../client"
-import Collapsable from "../atoms/Collapsable"
+import Collapsable from "../organisms/Collapsable"
 
 
 function ServiceData() {

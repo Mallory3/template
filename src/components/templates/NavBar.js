@@ -33,18 +33,13 @@ export default function NavBar() {
           >
             <img className="logo" alt="logo" src="./Sitelify.png"></img>
           </NavLink>
-          <NavLink 
+          {/* SAMPLE NAVLINK */}
+          {/* <NavLink 
             to="/about"
             className="inline-flex items-center py-3 px-3 my-3"
           >
             About
-          </NavLink>
-          <NavLink 
-            to="/contact"
-            className="inline-flex items-center py-3 px-3 my-3"
-          >
-            Contact
-          </NavLink>
+          </NavLink> */}
         </nav>
         <div className="inline-flex py-3 px-3 my-3">
           <SocialIcon url="https://www.facebook.com/mallory.zlomanchuk" className="mr-4" target="_blank" fgColor="#fff" style={{ height:35, width:35}} />

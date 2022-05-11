@@ -1,17 +1,12 @@
 import React, { useState, useEffect } from "react"
-import sanityClient from "../client"
-import { FaRegPaperPlane } from "react-icons/fa";
-import { MdOutlineEmail } from "react-icons/md";
+import sanityClient from "../../client"
 import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { MdAlternateEmail } from "react-icons/md";
-import { GoMention } from "react-icons/go";
 import { GoDeviceMobile } from "react-icons/go";
-import Header from "./atoms/Header"
-import Button from "./atoms/Button"
-import Paragraph from "./atoms/Paragraph"
-import ParallaxImg from "./atoms/Parallax"
-import Map from "./atoms/Map"
-import Grid from "./atoms/Grid"
+import Header from "../atoms/Header"
+import Button from "../atoms/Button"
+import Map from "../atoms/Map"
+
 
 export default function Contact() {
 

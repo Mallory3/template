@@ -1,6 +1,6 @@
 import React from "react"
-import GalleryData from "./CMSData/GalleryData"
-import SectionHeader from "./atoms/SectionHeader"
+import GalleryData from "../CMSData/GalleryData"
+import SectionHeader from "../atoms/SectionHeader"
 
 const Gallery = () => {
   

@@ -1,6 +1,6 @@
 import React from 'react';
 import useCollapse from 'react-collapsed';
-import Header from "./Header"
+import Header from "../atoms/Header"
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { IoIosInformationCircle } from "react-icons/io";

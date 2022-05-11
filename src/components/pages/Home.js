@@ -1,19 +1,15 @@
 import React from "react"
-import Contact from "./Contact"
-import Header from "./atoms/Header"
-import InfoBanner from "./CMSData/InfoBanner"
-import PromoBanner from "./promoBanner"
-import Button from "./atoms/Button"
-import Paragraph from "./atoms/Paragraph"
-import ParallaxImg from "./atoms/Parallax"
-import Map from "./atoms/Map"
-import Grid from "./atoms/Grid"
-import Services from "./Services"
-import Gallery from "./Gallery"
-import Team from "./Team"
-import Footer from "./Footer"
+import Header from "../atoms/Header"
+import InfoBanner from "../CMSData/InfoBanner"
+import PromoBanner from "../templates/promoBanner"
+import Button from "../atoms/Button"
+import Paragraph from "../atoms/Paragraph"
+import ParallaxImg from "../atoms/Parallax"
+import Services from "../templates/Services"
+import Gallery from "../templates/Gallery"
+import Team from "../templates/Team"
+import Footer from "../templates/Footer"
 import { SocialIcon } from "react-social-icons";
-
 
 
 export default function Home() {

@@ -2,7 +2,7 @@ import React, { useState, useEffect,  useRef } from "react"
 import sanityClient from "../../client"
 import imageUrlBuilder from '@sanity/image-url'
 import Header from "../atoms/Header"
-import ExpandText from "../atoms/ExpandText"
+import ExpandText from "../organisms/ExpandText"
 import Button from "../atoms/Button"
 import GalleryData from "./GalleryData"
 import Modal from "react-modal"
@@ -133,6 +133,7 @@ function TeamData() {
                         >
                           My Gallery
                         </button>
+
                         <Modal 
                           key={index}
                           data-id={index}

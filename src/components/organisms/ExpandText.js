@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
-import { Hello } from '../helper.js'
+
 
 const ExpandableText = ({ content,charLimit}) => {
   const [expandableText, setExpandText] = useState(false);

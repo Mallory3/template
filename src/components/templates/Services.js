@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
-import SectionHeader from "./atoms/SectionHeader"
-import ServiceData from "./CMSData/ServiceData"
+import SectionHeader from "../atoms/SectionHeader"
+import ServiceData from "../CMSData/ServiceData"
 
 const Services = () => {
   

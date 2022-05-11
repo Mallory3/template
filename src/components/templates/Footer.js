@@ -2,7 +2,7 @@ import React from "react"
 import Contact from "./Contact"
 
 
-const Gallery = () => {
+const Footer = () => {
   
   return (
     <section className="navFooter w-full h-screen text-white pt-8">
@@ -17,4 +17,4 @@ const Gallery = () => {
   )
 };
 
-export default Gallery;
+export default Footer;
