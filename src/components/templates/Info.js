@@ -4,8 +4,7 @@ import Paragraph from "../atoms/Paragraph"
 import Section from "../atoms/Section"
 
 
-const Info = () => {
-  
+export default function Info() {
   return (
     <Section id="info">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 justify-items-center content-center container mx-auto sm:max-w-7xl">
@@ -28,5 +27,3 @@ const Info = () => {
     </Section>
   )
 };
-
-export default Info;

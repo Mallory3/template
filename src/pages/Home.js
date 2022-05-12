@@ -1,5 +1,3 @@
-import React from "react"
-//IMPORT TEMPLATES
 import Featured from "../components/templates/Featured"
 import Footer from "../components/templates/Footer"
 import Gallery from "../components/templates/Gallery"

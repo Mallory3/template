@@ -2,7 +2,8 @@ import CTAParagraph from "../molecules/CTAParagraph"
 import Grid from "../atoms/Grid"
 import Section from "../atoms/Section"
 
-const Featured = () => {
+
+export default function Featured() {
   // TODO: Create Featured schema for sanity and pull in data. Define CTAParagraph props.
   return (
     <Section id="featured">
@@ -14,5 +15,3 @@ const Featured = () => {
     </Section>
   )
 };
-
-export default Featured;

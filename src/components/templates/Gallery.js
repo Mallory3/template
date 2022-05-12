@@ -2,7 +2,8 @@ import React from "react"
 import GalleryData from "../organisms/GalleryData"
 import SectionHeader from "../organisms/SectionHeader"
 
-const Gallery = () => {
+
+export default function Gallery() {
   // TODO: fecth CMS data and add to components as props to pass down to children
   return (
     <section className="w-full galleryBg pt-16">
@@ -15,5 +16,3 @@ const Gallery = () => {
     </section>
   )
 };
-
-export default Gallery;

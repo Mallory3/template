@@ -2,9 +2,10 @@ import { useState, useEffect } from "react"
 import sanityClient from "../../client"
 import imageUrlBuilder from '@sanity/image-url'
 
-function ParallaxBanner() {
-    //set a state and use state and set new state for data
-    const [ParallaxBannerData, setParallaxBanner] = useState(null);
+
+export default function ParallaxBanner() {
+
+  const [ParallaxBannerData, setParallaxBanner] = useState(null);
 
       useEffect(() => {
         sanityClient
@@ -51,5 +52,3 @@ function ParallaxBanner() {
         </section>
       )
 }
-
-export default ParallaxBanner;

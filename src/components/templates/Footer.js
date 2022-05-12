@@ -1,7 +1,8 @@
 import Contact from "./Contact"
 import Section from "../atoms/Section"
 
-const Footer = () => {
+
+export default function Footer() {
   // TODO: Fetch data from CMS and add as props to Contact
   return (
     <Section id="footer">
@@ -16,5 +17,3 @@ const Footer = () => {
     </Section>
   )
 };
-
-export default Footer;
