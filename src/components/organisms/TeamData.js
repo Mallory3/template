@@ -4,7 +4,7 @@ import imageUrlBuilder from '@sanity/image-url'
 import Header from "../atoms/Header"
 import ExpandText from "../organisms/ExpandText"
 import Button from "../atoms/Button"
-import GalleryData from "./GalleryData"
+import GalleryData from "../organisms/GalleryData"
 import Modal from "react-modal"
 import { SocialIcon } from "react-social-icons";
 // SWIPER

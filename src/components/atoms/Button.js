@@ -1,18 +1,12 @@
-import React from 'react';
-
-class Button extends React.Component {
-  render() {
-    const ButtonType = this.props.type;
-    
+const Button = ({ text, type = 'primary' }) => {
     return (
       <button
-        className={`button rounded-full py-2 px-4 ${ButtonType}`}
+        className={`button rounded-full py-2 px-4 ${type}`}
         type="button"
       >
-        {this.props.text}
+        {text}
       </button>
     )
-  }
 };
 
 export default Button;

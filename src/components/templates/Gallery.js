@@ -1,5 +1,5 @@
 import React from "react"
-import GalleryData from "../CMSData/GalleryData"
+import GalleryData from "../organisms/GalleryData"
 import SectionHeader from "../organisms/SectionHeader"
 
 const Gallery = () => {

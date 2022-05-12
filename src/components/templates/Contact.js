@@ -4,9 +4,9 @@ import { MdOutlinePhoneInTalk } from "react-icons/md";
 import { GoDeviceMobile } from "react-icons/go";
 import Header from "../atoms/Header"
 import Button from "../atoms/Button"
-import EmailIcon from "../molecules/contact/EmailIcon"
+import EmailIcon from "../molecules/EmailIcon"
 
-import GoogleMap from "../molecules/GoogleMap"
+import GoogleMap from "../molecules/GoogleMapData"
 
 
 export default function Contact() {

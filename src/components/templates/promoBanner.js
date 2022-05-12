@@ -1,5 +1,5 @@
 import React from "react"
-import PromoBannerData from "../CMSData/PromoBannerData"
+import PromoBannerData from "../organisms/PromoBannerData"
 
 const PromoBanner = () => {
   

@@ -1,5 +1,5 @@
 import React from "react"
-import TeamData from "../CMSData/TeamData"
+import TeamData from "../organisms/TeamData"
 import SectionHeader from "../organisms/SectionHeader"
 
 const Team = () => {
