@@ -4,8 +4,8 @@ import sanityClient from "../../client"
 import SectionHeader from "../organisms/SectionHeader"
 import Collapsable from "../organisms/Collapsable"
 
-const Services = () => {
-   //set a state and use state and set new state for data
+export default function Services() {
+  //set a state and use state and set new state for data
    const [serviceData, setService] = useState(null);
 
    useEffect(() => {
@@ -33,5 +33,3 @@ const Services = () => {
     </section>
   )
 };
-
-export default Services;

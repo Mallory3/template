@@ -1,8 +1,7 @@
-import React from "react"
 import TeamData from "../organisms/TeamData"
 import SectionHeader from "../organisms/SectionHeader"
 
-const Team = () => {
+export default function Team() {
   
   return (
     <section id="team" className="teamSection container mx-auto overflow-hidden max-w-sm sm:max-w-7xl">
@@ -11,5 +10,3 @@ const Team = () => {
     </section>
   )
 };
-
-export default Team;

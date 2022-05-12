@@ -5,7 +5,7 @@ import Email from "../atoms/Email"
 import Header from "../atoms/Header"
 
 export default function EmailIcon() {
-
+  // TODO:REMOVE DATA FETCH AND ADD TO PARENT
   const [contactData, setContact] = useState(null);
 
   useEffect(() => {
