@@ -1,13 +1,13 @@
-import React from "react"
 import { SocialIcon } from "react-social-icons";
-// IMPORT ORGANISMS
 import Header from "../atoms/Header"
 import Paragraph from "../atoms/Paragraph"
+import Section from "../atoms/Section"
+
 
 const Info = () => {
   
   return (
-    <section id="info">
+    <Section id="info">
       <div className="grid grid-cols-1 md:grid-cols-2 md:gap-8 justify-items-center content-center container mx-auto sm:max-w-7xl">
         <div className="flex flex-col justify-between m-auto h-4/6">
           <Header text="I am a h3 Header" size="3" />
@@ -25,7 +25,7 @@ const Info = () => {
         <div className="flex items-center justify-center m-auto mb-20 mt-20 bg-center bg-cover grid-img2 rounded h-full">
         </div>
       </div>
-    </section>
+    </Section>
   )
 };
 

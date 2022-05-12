@@ -3,7 +3,7 @@ import GalleryData from "../organisms/GalleryData"
 import SectionHeader from "../organisms/SectionHeader"
 
 const Gallery = () => {
-  
+  // TODO: fecth CMS data and add to components as props to pass down to children
   return (
     <section className="w-full galleryBg pt-16">
       <div className="container m-auto overflow-hidden sm:max-w-7xl">

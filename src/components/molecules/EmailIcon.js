@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react"
 import sanityClient from "../../client"
 import { MdAlternateEmail } from "react-icons/md";
-// IMPORT ATOMS
 import Email from "../atoms/Email"
 import Header from "../atoms/Header"
 

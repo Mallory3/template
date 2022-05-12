@@ -5,8 +5,7 @@ import { GoDeviceMobile } from "react-icons/go";
 import Header from "../atoms/Header"
 import Button from "../atoms/Button"
 import EmailIcon from "../molecules/EmailIcon"
-
-import GoogleMap from "../molecules/GoogleMapData"
+import Map from "../atoms/Map"
 
 
 export default function Contact() {
@@ -58,7 +57,7 @@ export default function Contact() {
             <Header text="Visit Us" size="3" />
             <p>130 Country Village Rd NE Calgary, AB T3K 6B8</p>
         </div>
-        <GoogleMap />
+        <Map key={index} mapEmbedded={contact.mapEmbedded} />
        </div>
       ))}
     </div>
